@@ -1,6 +1,6 @@
 const transform = require("./index");
 
-testSuite = [
+const testData = [
   ["1", "I"],
   ["2", "II"],
   ["3", "III"],
@@ -405,6 +405,16 @@ testSuite = [
   ["2800", "MMDCCC"],
   ["2900", "MMCM"],
   ["3000", "MMM"],
+  ["3999", "MMMCMXCIX"],
 ];
 
-testSuite.forEach((t) => console.log(transform(t[0]) == t[1]));
+const test = (data) => {
+  let result = true;
+  data.map((t) => {
+    if (transform(t[0]) !== t[1]) result = false;
+  });
+  return result
+};
+
+if(test(testData)) console.log("\x1b[42m%s\x1b[0m", " PASS ")
+else console.log("\x1b[41m%s\x1b[0m", " FAIL ")
