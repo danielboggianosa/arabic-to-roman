@@ -7,6 +7,6 @@
     "test": "node index.test.js"
   },
   "keywords": [],
-  "author": "",
+  "author": "Daniel Boggiano Sáenz",
   "license": "ISC"
 }

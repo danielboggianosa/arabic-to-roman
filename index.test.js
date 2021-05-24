@@ -413,8 +413,8 @@ const test = (data) => {
   data.map((t) => {
     if (transform(t[0]) !== t[1]) result = false;
   });
-  return result
+  return result;
 };
 
-if(test(testData)) console.log("\x1b[42m%s\x1b[0m", " PASS ")
-else console.log("\x1b[41m%s\x1b[0m", " FAIL ")
+if (test(testData)) console.log("\x1b[42m%s\x1b[0m", " PASS ");
+else console.log("\x1b[41m%s\x1b[0m", " FAIL ");
