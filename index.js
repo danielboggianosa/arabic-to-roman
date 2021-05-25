@@ -1,4 +1,6 @@
 module.exports = transform = (arabic) => {
+  if (arabic > 3999) return "n/a";
+
   const units = ["", "I", "II", "III", "IV", "V", "VI", "VII", "VIII", "IX"];
   const tens = ["", "X", "XX", "XXX", "XL", "L", "LX", "LXX", "LXXX", "XC"];
   const hundreds = ["", "C", "CC", "CCC", "CD", "D", "DC", "DCC", "DCCC", "CM"];

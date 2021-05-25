@@ -406,6 +406,7 @@ const testData = [
   ["2900", "MMCM"],
   ["3000", "MMM"],
   ["3999", "MMMCMXCIX"],
+  ["4000", "n/a"],
 ];
 
 const test = (data) => {
