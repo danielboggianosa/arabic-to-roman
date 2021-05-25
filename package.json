@@ -4,7 +4,8 @@
   "description": "Transform Arabic numbers into Roman Numbers with unit testing",
   "main": "index.js",
   "scripts": {
-    "test": "node index.test.js"
+    "test": "node index.test.js",
+    "start": "node app.js"
   },
   "keywords": [],
   "author": "Daniel Boggiano Sáenz",
